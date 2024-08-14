@@ -1,0 +1,19 @@
+CREATE DATABASE BibliotecaDB;
+
+USE BibliotecaDB;
+
+CREATE TABLE libros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    autor VARCHAR(255) NOT NULL,
+    isbn VARCHAR(20) NOT NULL,
+    año_publicacion INT,
+    disponible BOOLEAN DEFAULT TRUE
+);
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    id_usuario VARCHAR(20) NOT NULL,
+    email VARCHAR(255) NOT NULL
+);
